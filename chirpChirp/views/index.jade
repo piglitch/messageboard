@@ -2,12 +2,13 @@ extends layout
 
 
 block content
-  h1= title
-  p Here you can see the messages  
-  each message in messages
-    li= message.text 
-    ~#{message.user} on #{message.added}
-
-  p 
-  p
-  a(href="/new") Add a new message!   
+  div(id= 'homepage')
+    h1= title
+    p Here you can see the messages  
+    each message in messages
+      li= message.text 
+      sent by #{message.user} on #{message.added.getHours()}:#{message.added.getMinutes()} IST
+      p
+    p 
+    p
+    a(href="/new") Add a new message!   

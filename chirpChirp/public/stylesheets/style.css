@@ -1,6 +1,13 @@
 body {
   padding: 50px;
+  color: aliceblue;
+  background-color: rgb(33, 36, 39);
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#homepage{
+  margin-left: 280px;
+  margin-right: 280px;
 }
 
 a {
