@@ -1,0 +1,13 @@
+extends layout
+
+
+block content
+  h1= title
+  p Here you can see the messages  
+  each message in messages
+    li= message.text 
+    ~#{message.user} on #{message.added}
+
+  p 
+  p
+  a(href="/new") Add a new message!   
